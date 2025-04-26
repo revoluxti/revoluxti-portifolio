@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Volume</title>
+</head>
+<body>
+
+  <audio id="audio" controls>
+    <source src="reluxti-record.m4a" type="audio/mp3">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+  <script>
+    // Obtém o elemento de áudio
+    const audio = document.getElementById('audio');
+    
+    // Função que será executada quando os dados da música forem carregados
+    audio.addEventListener('loadeddata', function() {
+      // Define o volume para 50% (0.5)
+      audio.volume = 0.5;
+    });
+    
+    // Alternativa para garantir que o volume seja alterado após carregar a música
+    window.onload = function() {
+      audio.volume = 0.5;  // Aqui também estamos configurando o volume para 50%
+    }
+  </script>
+
+</body>
+</html>
