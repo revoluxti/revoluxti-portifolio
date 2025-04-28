@@ -27,11 +27,15 @@
 
 <body>
     <header>
-        <div class="imagem-de-fundo" id="cabeca"></div>
+        <div class="imagem-de-fundo" id="cabeca-index"></div>
         <div class="interface"> <!--Inicio interface-->
             <div class="flex">
+                
                 <div class="logo"><!--inicio logo-->
-                    <a href="index.html"><img src="RHNO/Ceo.jpeg" alt="bot-revoluxti"></a>
+                    <a href="index.html" id="link-home">
+                        <img src="RHNO/Ceo.jpeg" alt="bot-revoluxti">
+                    </a>
+                    <audio id="audio" src="reluxti-record.m4a" loop></audio> <!-- Olha o loop mágico aqui -->
                 </div><!--Fim logo-->
                 <nav class="menu-desktop" aria-label="menu-principal">
                     <ul>
@@ -50,114 +54,24 @@
             </div><!--Fim flex-->
         </div> <!--Fim interface-->
     </header>
-
+            </div><!--Fim flex-->
+        </div><!--Fim interface-->
+    </header>
     <main>
-        <section class="topo-site"> <!-- início section topo-site -->
-            <div class="interface"> <!-- início interface -->
-                <div class="flex"> <!-- Wrapper geral (texto + imagem + serviços) -->
-                    <!-- Texto principal à esquerda -->
-                    <div class="txt-topo-site"> <!--Inicio txt-topo-site-->
-                        <h1>REVOLUXTI</h1>
-                        
-                        <div class="btn-cadastro">
-                            <a href="#">
-                                <button>ATENDIMENTO</button>
-                            </a>
-                        </div>
-                        <p>
-                            Projetos Web-Desing e Web-Developer personalizados;<br>
-                            Sites institucionais e Lojas Virtuais com suporte 24HORAS;<br>
-                            Monitoramento em tempo real e testes de segurança periodicos;<br>
-                            Integração de plataformas digitais e arquitetura modular de alta performance;<br>
-                            Sistema Integrado com API’s Robustas;<br>
-                            Estratégias de trade-marketing, modernização de sites corporativos e lojas
-                            e-commerces<br>
-                            Em total conformidade com a LGPD, adotamos controles
-                            rigorosos de
-                            segurança da informação.<br>
-                            Criptografia de dados em repouso e em trânsito. Monitoramento
-                            contínuo contra
-                            invasões e vazamentos. Planos de resposta a incidentes e auditorias. Transforme
-                            seu projeto
-                            digital em realidade com quem alia expertise técnica e governança de riscos.
-                        </p>
-                    </div>
-                    <!-- Mascote do lado direito -->
-                    <div class="imagem-do-rhino">
-                        <img src="RHNO/revoluxti01.png" alt="Mascote REVOLUXTI">
-                    </div>
-
-                    <!-- Bloco dos serviços à direita do mascote -->
-                    <!-- Bloco dos Serviços -->
-                    <div class="servicos-boxes">
-                        <div class="box" id="loja-virtual">
-                            <div class="box-content">
-                                <h3 class="especial" id="loja"><i class="bi bi-cart3"></i> Loja Online</h3>
-                                <div class="ticker-container">
-                                    <p class="ticker-text">Ter uma presença online é essencial. Venda com estilo,
-                                        impacto e
-                                        segurança no DNA.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box" id="cybersecurity">
-                            <h3 class="especial" id="cyber"><i class="bi bi-shield-lock-fill"></i> CyberSecurity Red
-                                Team</h3>
-                            <div class="ticker-container">
-                                <p class="ticker-text">Na era dos dados e da hiperconectividade a cibersegurança é a
-                                    linha de defesa crucial para sua
-                                    empresa.
-                                    Proteja-se como se fosse a última batalha! Resposta imediata e precisa a incidentes,
-                                    porque cada segundo
-                                    conta na guerra digital. </p>
-
-                            </div>
-                        </div>
-                        <div class="box" id="investigação">
-                            <h3 class="especial" id="investigacao"><i class="bi bi-search"></i> Investigação Digital
-                            </h3>
-                            <div class="ticker-container">
-                                <p class="ticker-text"> A investigação digital entra em cena quando é necessário ir com
-                                    precisão cirúrgica para identificar, rastrear, documentar e comprovar comportamentos
-                                    suspeitos, fraudes e incidentes cibernéticos.
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- Fim dos Serviços -->
-                </div> <!-- fim Wrapper geral -->
-
-            </div> <!-- fim interface -->
-        </section><!--Fim section topo-site-->
-        <section class="noticiario">
-            <div class="box">
-                <h3 class="especial"><i class="bi bi-newspaper"></i>Principais notícias</h3>
-                <div class="ticker-container">
-                    <p class="ticker-text">Resposta imediata e precisa a incidentes, porque cada segundo conta na guerra
-                        digital. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo exercitationem
-                        ratione consequatur quasi magni, dolores esse iusto similique accusamus soluta blanditiis
-                        tempora? Non delectus enim obcaecati aliquam, iste numquam?</p>
+        <div class="imagem-index">
+            <div class="interface">
+                <h1>REVOLUXTI A REVISTA DIGITAL DA CIBERSEGURANÇA</h1>
+                <div class="flex">
+                    
+                    <img src="RHNO/capa-edicao1.png" alt="capa-revista">
                 </div>
-
-        </section>
+            </div>
+        </div>
     </main>
-    <section class="redes-sociais"></section>
     <script>
-        const audio = document.getElementById('audio');
 
-        // Garante que o volume seja ajustado quando os dados forem carregados
-        audio.addEventListener('loadeddata', function () {
-            audio.volume = 0.02; // volume de 50%
-        });
-
-        // Garantia extra para navegadores que não disparam o loadeddata corretamente
-        window.onload = function () {
-            audio.volume = 0.02;
-        };
     </script>
+
     <footer>
         <p>&copy; 2025 REVOLUXTI. All rights reserved.</p>
     </footer>
-</body>
-
-</html>

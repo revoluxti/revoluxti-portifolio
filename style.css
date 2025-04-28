@@ -42,10 +42,18 @@ button:hover{
     width: 100%; /*largura imagem*/
     height: 200px;/*altura imagem*/
 }
+/*Estilo pagina index*/
 div#cabeca-index{
-    
     background-image: url(RHNO/cabeca-index.png);
 }
+.imagem-index{
+    display: flex;
+    justify-content: center; /* Centraliza no eixo horizontal */
+    align-items: center; /* Centraliza no eixo vertical */
+    /*height: 100vh;  Faz a div ocupar a tela toda (opcional) */
+    text-align: center; /* Centraliza o texto */
+}
+/*Estilo paginas*/
 div#cabeca{
     background-image: url(RHNO/backgroud-topo.png);
 }
@@ -277,7 +285,69 @@ h3.especial {
     transition: transform 0.2s ease-in-out;
     
 }
+/*Estilo das Especialidades*/
+section.especialidades {
+    padding: 40px
+        /*em cima e embaixo*/
+        4%;
+    /*para não colar nas laterais quando minimizar a tela*/
+}
 
+section.especialidades .flex {
+    gap: 60px;
+    /*espaçamento entre as box*/
+
+}
+
+/*estylizando as box*/
+.especialidades .especialidades-box {
+    color: #b31111c9;
+    padding: 40px;
+    border-radius: 20px;
+    /*border: 2px solid #b31111; não é mais preciso border*/
+    margin-top: 40px;
+    transition: 1.2s;
+    /*para o zoom ficar mais suave*/
+}
+
+/*configuração de efeitos visuais nas box da especialidade*/
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    /*não pecisa ter pixels, efeito de zoom, cuidar com exagero*/
+    box-shadow: 0
+        /*box-shadow espalhamento*/
+        
+        /*deslocamento vertical*/
+        0
+        /*delocamento laterais*/
+        20px;
+        /*espalhamento quanto maior for o valor mais espalhamento*/
+}
+
+/*style icons*/
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #d80b0b;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+    /*espaçamento entre o h3 e icons*/
+}
+.btn-social{
+    margin-left: 40px;
+}
+.btn-social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d80b0bcb;
+    font-size: 22px;
+    cursor: pointer;/*para aparecer o dedinho de interação com as redes*/
+    transition: .2s;
+}
 
 footer {
     text-align: center;
