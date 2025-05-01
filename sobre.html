@@ -55,7 +55,7 @@
     </header>
 
     <main>
-        <section class="topo-site"> <!-- início section topo-site -->
+        <section class="topo-do-site"> <!-- início section topo-site -->
             <div class="interface"> <!-- início interface -->
                 <div class="flex"> <!-- Wrapper geral (texto + imagem + serviços) -->
                     <!-- Texto principal à esquerda -->
@@ -86,6 +86,7 @@
                     </div>
                     <!-- Mascote do lado direito -->
                     <div class="imagem-do-rhino">
+                        <source media="(max-width.725px)" srcset="RHNO/revoluxti01.png">
                         <img src="RHNO/revoluxti01.png" alt="Mascote REVOLUXTI">
                     </div>
 
@@ -142,43 +143,63 @@
                 </div>
 
         </section>
-    </main>
-    <section class="redes-sociais">
-        <div class="interface">
-            <h2>REDES SOCIAIS</h2>
-            <div class="flex">
-                
-                <div class="btn-social">
-                    <a href="#"><button><i><i class="bi bi-instagram"></i></i></button></a>
-                    <a href="#"><button><i><i class="bi bi-youtube"></i></i></button></a>
-                    <a href="#"><button><i><i class="bi bi-facebook"></i></i></button></a>
-                    <a href="#"><button><i><i class="bi bi-whatsapp"></i></i></button></a>
-                    <a href="#"><button><i><i class="bi bi-discord"></i></i></button></a>
-                    <a href="#"><button><i><i class="bi bi-twitch"></i></i></button></a>
-                    <a href="#"><button><i><i class="bi bi-twitter-x"></i></i></button></a>
-                    <a href="#"><button><i><i class="bi bi-linkedin"></i></i></button></a>
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">Fala comigo</h2>
+                <form action=""> <!--tag de formulario pesquisar... o atributo action para envio de formulário-->
+                    <input type="text" name="" id="" placeholder="seu nome completo" required>
+                    <input type="text" name="" id="" placeholder="seu e-mail" required>
+                    <input type="text" name="" id="" placeholder="seu celular" required>
+                    <textarea name="" id="" placeholder="Sua mensagem"></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                    <!-- imput type text caixa de texto, placeholder = é o texto exibido-->
+
+                </form>
+            </div>
+        </section><!-- Fim formulário-->
+        <hr>
+        <section class="redes-sociais">
+            <div class="interface">
+                <img src="RHNO/logo1.png" alt="logo-rodape">
+                <div class="flex">
+                    <div class="btn-social">
+                        <a href="#"><button><i><i class="bi bi-instagram"></i></i></button></a>
+                        <a href="#"><button><i><i class="bi bi-youtube"></i></i></button></a>
+                        <a href="#"><button><i><i class="bi bi-facebook"></i></i></button></a>
+                        <a href="#"><button><i><i class="bi bi-whatsapp"></i></i></button></a>
+                        <a href="#"><button><i><i class="bi bi-discord"></i></i></button></a>
+                        <a href="#"><button><i><i class="bi bi-twitch"></i></i></button></a>
+                        <a href="#"><button><i><i class="bi bi-twitter-x"></i></i></button></a>
+                        <a href="#"><button><i><i class="bi bi-linkedin"></i></i></button></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <script>
-        const audio = document.getElementById('audio');
-        const linkHome = document.getElementById('link-home');
-        let isPlaying = false;
+        </section>
+        <div class="interfece">
+            <div class="link-email">
+                <p><i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:revoluxti@gmail.com">revoluxti@gmail.com</a>
+                </p>
+            </div>
+            <script>
+                const audio = document.getElementById('audio');
+                const linkHome = document.getElementById('link-home');
+                let isPlaying = false;
 
-        linkHome.addEventListener('click', function (event) {
-            event.preventDefault(); // Impede o link de navegar
+                linkHome.addEventListener('click', function (event) {
+                    event.preventDefault(); // Impede o link de navegar
 
-            if (!isPlaying) {
-                audio.volume = 0.01;
-                audio.play();
-                isPlaying = true;
-            } else {
-                audio.pause();
-                isPlaying = false;
-            }
-        });
-    </script>
+                    if (!isPlaying) {
+                        audio.volume = 0.01;
+                        audio.play();
+                        isPlaying = true;
+                    } else {
+                        audio.pause();
+                        isPlaying = false;
+                    }
+                });
+            </script>
+    </main>
     <footer>
         <p>&copy; 2025 REVOLUXTI. All rights reserved.</p>
     </footer>
